@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-form">
+
+            <div class="title">
+                <h1>Ajude a causa</h1>
+            </div>
+
+            <div class="registration-form">
+                <form action="http://localhost:3000/registrations" method="post">
+                    <div class="form-name">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" required/>
+                    </div>
+                    <div class="div-form form-age">
+                        <label for="age">Idade</label>
+                        <input type="number" id="age" name="age" required/>
+                    </div>
+                    <div class="div-form form-email">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required/>
+                    </div>
+                    <div class="div-form form-size">
+                        <p>Escolha seu tamanho:</p>
+                        <input type="radio" id="xpp" name="size" value="XPP" />
+                        <label for="xpp"> XPP</label>
+                        
+                        <input type="radio" id="pp" name="size" value="PP" />
+                        <label for="pp"> PP</label>
+                        
+                        <input type="radio" id="p" name="size" value="P" />
+                        <label for="p"> P</label>
+                        
+                        <input type="radio" id="m" name="size" value="M" />
+                        <label for="m"> M</label>
+                    
+                        <input type="radio" id="g" name="size" value="G" />
+                        <label for="g"> G</label>
+                        
+                        <input type="radio" id="gg" name="size" value="GG" />
+                        <label for="gg"> GG</label>
+                        
+                        <input type="radio" id="xgg" name="size" value="XGG" />
+                        <label for="xgg"> XGG</label>
+                    </div>
+                    <div class="div-form form-category">
+                        <p>Escolha sua(s) categoria(s) de inscrição</p>
+
+                        <input type="checkbox" id="3km" name="3RUN" value="3RUN" />
+                        <label for="3km"> Corrida 3km [3RUN]</label>
+
+                        <input type="checkbox" id="5km" name="5RUN" value="5RUN" />
+                        <label for="5km"> Corrida 5km [5RUN]</label>
+
+                        <input type="checkbox" id="4km" name="4WALK" value="4WALK" />
+                        <label for="4km"> Caminhada 4km [4WALK]</label>
+                    </div>
+                    <div class="div-form form-donation">
+                        <label for="donation">Valor de doação</label>
+                        <input type="text" id="donation" name="donation" required/>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>

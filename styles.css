@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-brand{
+    width: 50%;
+    height: auto;
+}
+
+.container-form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #00141a;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.registration-form{
+    width: 80%;
+    height: 88%;
+    background-color: #ffffff;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.registration-form form{
+    width: 80%;
+}
+
+.div-form{
+    margin: 20px 0;
+}
+
+.input-box{
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-box input{
+    width: 100%;
+}
+
+.input-box label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all .5s;
+    cursor: text;
+}
+
+.input{
+    width: 70%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    font-size: 17px;
+    outline: none;
+}
+
+form .input-box .input:focus ~ label,
+form .input-box .input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #2d5966 ;
+}
+
+.form-size, .form-category{
+    display: flex;
+    flex-direction: column;
+}

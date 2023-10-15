@@ -3,71 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Ajude uma causa | Formulário</title>
 </head>
 <body>
     <div class="container">
+        <div class="container-brand">
+
+        </div>
         <div class="container-form">
 
             <div class="title">
-                <h1>Ajude a causa</h1>
+                <h1>Formulário de inscrição</h1>
             </div>
 
             <div class="registration-form">
                 <form action="http://localhost:3000/registrations" method="post">
-                    <div class="form-name">
+                    <div class="input-box form-name">
+                        <input type="text" id="name" name="name" required class="input"/>
                         <label for="name">Nome Completo</label>
-                        <input type="text" id="name" name="name" required/>
                     </div>
-                    <div class="div-form form-age">
+                    <div class="input-box form-age">
+                        <input type="number" id="age" name="age" required class="input"/>
                         <label for="age">Idade</label>
-                        <input type="number" id="age" name="age" required/>
                     </div>
-                    <div class="div-form form-email">
+                    <div class="input-box form-email">
+                        <input type="email" id="email" name="email" required class="input"/>
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required/>
                     </div>
                     <div class="div-form form-size">
                         <p>Escolha seu tamanho:</p>
-                        <input type="radio" id="xpp" name="size" value="XPP" />
-                        <label for="xpp"> XPP</label>
+                        <div class="size">
+                            <input type="radio" id="xpp" name="size" value="XPP" />
+                            <label for="xpp"> XPP</label>
+                        </div>
+                        <div class="size">
+                            <input type="radio" id="pp" name="size" value="PP" />
+                            <label for="pp"> PP</label>
+                        </div>
                         
-                        <input type="radio" id="pp" name="size" value="PP" />
-                        <label for="pp"> PP</label>
+                        <div class="size">
+                            <input type="radio" id="p" name="size" value="P" />
+                            <label for="p"> P</label>
+                        </div>
                         
-                        <input type="radio" id="p" name="size" value="P" />
-                        <label for="p"> P</label>
+                        <div class="size">
+                            <input type="radio" id="m" name="size" value="M" />
+                            <label for="m"> M</label>
+                        </div>
                         
-                        <input type="radio" id="m" name="size" value="M" />
-                        <label for="m"> M</label>
-                    
-                        <input type="radio" id="g" name="size" value="G" />
-                        <label for="g"> G</label>
-                        
-                        <input type="radio" id="gg" name="size" value="GG" />
-                        <label for="gg"> GG</label>
-                        
-                        <input type="radio" id="xgg" name="size" value="XGG" />
-                        <label for="xgg"> XGG</label>
+                        <div class="size">
+                            <input type="radio" id="g" name="size" value="G" />
+                            <label for="g"> G</label>
+                        </div>
+                         
+                        <div class="size">
+                            <input type="radio" id="gg" name="size" value="GG" />
+                            <label for="gg"> GG</label>
+                        </div>
+                      
+                        <div class="size">
+                            <input type="radio" id="xgg" name="size" value="XGG" />
+                            <label for="xgg"> XGG</label>
+                        </div>
                     </div>
+
                     <div class="div-form form-category">
                         <p>Escolha sua(s) categoria(s) de inscrição</p>
 
-                        <input type="checkbox" id="3km" name="3RUN" value="3RUN" />
-                        <label for="3km"> Corrida 3km [3RUN]</label>
+                        <div class="category">
+                            <input type="checkbox" id="3km" name="3RUN" value="3RUN" />
+                            <label for="3km"> Corrida 3km [3RUN]</label>
+                        </div>
 
-                        <input type="checkbox" id="5km" name="5RUN" value="5RUN" />
-                        <label for="5km"> Corrida 5km [5RUN]</label>
+                        <div class="category">
+                            <input type="checkbox" id="5km" name="5RUN" value="5RUN" />
+                            <label for="5km"> Corrida 5km [5RUN]</label>
+                        </div>
 
-                        <input type="checkbox" id="4km" name="4WALK" value="4WALK" />
-                        <label for="4km"> Caminhada 4km [4WALK]</label>
+                        <div class="category">
+                            <input type="checkbox" id="4km" name="4WALK" value="4WALK" />
+                            <label for="4km"> Caminhada 4km [4WALK]</label>
+                        </div>
                     </div>
-                    <div class="div-form form-donation">
+                    <div class="input-box form-donation">
+                        <input type="text" id="donation" name="donation" required class="input"/>
                         <label for="donation">Valor de doação</label>
-                        <input type="text" id="donation" name="donation" required/>
                     </div>
 
-                    <button type="submit">Enviar</button>
+                    <button type="submit" class="button-submit">Enviar</button>
                 </form>
             </div>
 

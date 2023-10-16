@@ -1,102 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Changa+One&family=Comfortaa:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;700&family=Fredericka+the+Great&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" type="text/css" />
     <title>Ajude uma causa | Formulário</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="container-brand">
-
+      <div class="container-brand"></div>
+      <div class="container-form">
+        <div class="title">
+          <h1>Formulário de inscrição</h1>
         </div>
-        <div class="container-form">
 
-            <div class="title">
-                <h1>Formulário de inscrição</h1>
+        <div class="registration-form">
+          <form action="http://localhost:3000/registrations" method="post">
+            <div class="input-box form-name">
+              <input type="text" id="name" name="name" required class="input" />
+              <label for="name">Nome Completo</label>
             </div>
 
-            <div class="registration-form">
-                <form action="http://localhost:3000/registrations" method="post">
-                    <div class="input-box form-name">
-                        <input type="text" id="name" name="name" required class="input"/>
-                        <label for="name">Nome Completo</label>
-                    </div>
-                    <div class="input-box form-age">
-                        <input type="number" id="age" name="age" required class="input"/>
-                        <label for="age">Idade</label>
-                    </div>
-                    <div class="input-box form-email">
-                        <input type="email" id="email" name="email" required class="input"/>
-                        <label for="email">E-mail</label>
-                    </div>
-                    <div class="div-form form-size">
-                        <p>Escolha seu tamanho:</p>
-                        <div class="size">
-                            <input type="radio" id="xpp" name="size" value="XPP" />
-                            <label for="xpp"> XPP</label>
-                        </div>
-                        <div class="size">
-                            <input type="radio" id="pp" name="size" value="PP" />
-                            <label for="pp"> PP</label>
-                        </div>
-                        
-                        <div class="size">
-                            <input type="radio" id="p" name="size" value="P" />
-                            <label for="p"> P</label>
-                        </div>
-                        
-                        <div class="size">
-                            <input type="radio" id="m" name="size" value="M" />
-                            <label for="m"> M</label>
-                        </div>
-                        
-                        <div class="size">
-                            <input type="radio" id="g" name="size" value="G" />
-                            <label for="g"> G</label>
-                        </div>
-                         
-                        <div class="size">
-                            <input type="radio" id="gg" name="size" value="GG" />
-                            <label for="gg"> GG</label>
-                        </div>
-                      
-                        <div class="size">
-                            <input type="radio" id="xgg" name="size" value="XGG" />
-                            <label for="xgg"> XGG</label>
-                        </div>
-                    </div>
-
-                    <div class="div-form form-category">
-                        <p>Escolha sua(s) categoria(s) de inscrição</p>
-
-                        <div class="category">
-                            <input type="checkbox" id="3km" name="3RUN" value="3RUN" />
-                            <label for="3km"> Corrida 3km [3RUN]</label>
-                        </div>
-
-                        <div class="category">
-                            <input type="checkbox" id="5km" name="5RUN" value="5RUN" />
-                            <label for="5km"> Corrida 5km [5RUN]</label>
-                        </div>
-
-                        <div class="category">
-                            <input type="checkbox" id="4km" name="4WALK" value="4WALK" />
-                            <label for="4km"> Caminhada 4km [4WALK]</label>
-                        </div>
-                    </div>
-                    <div class="input-box form-donation">
-                        <input type="text" id="donation" name="donation" required class="input"/>
-                        <label for="donation">Valor de doação</label>
-                    </div>
-
-                    <button type="submit" class="button-submit">Enviar</button>
-                </form>
+            <div class="input-box form-age">
+              <input type="number" id="age" name="age" required class="input" />
+              <label for="age">Idade</label>
             </div>
 
+            <div class="input-box form-email">
+              <input type="email" id="email" name="email" required class="input" />
+              <label for="email">E-mail</label>
+            </div>
+            
+            <fieldset class="form-size">
+              <legend>Slecione o tamanho</legend>
+              <div class="size">
+                <input type="radio" id="xpp" name="size" value="XPP" />
+                <label for="xpp"> XPP</label>
+              </div>
+              <div class="size">
+                <input type="radio" id="pp" name="size" value="PP" />
+                <label for="pp"> PP</label>
+              </div>
+
+              <div class="size">
+                <input type="radio" id="p" name="size" value="P" />
+                <label for="p"> P</label>
+              </div>
+
+              <div class="size">
+                <input type="radio" id="m" name="size" value="M" />
+                <label for="m"> M</label>
+              </div>
+
+              <div class="size">
+                <input type="radio" id="g" name="size" value="G" />
+                <label for="g"> G</label>
+              </div>
+
+              <div class="size">
+                <input type="radio" id="gg" name="size" value="GG" />
+                <label for="gg"> GG</label>
+              </div>
+
+              <div class="size">
+                <input type="radio" id="xgg" name="size" value="XGG" />
+                <label for="xgg"> XGG</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-category">
+              <legend>Categoria de inscrição</legend>
+
+              <div class="category">
+                <input type="checkbox" id="3km" name="3RUN" value="3RUN" />
+                <label for="3km"> Corrida 3km</label>
+              </div>
+
+              <div class="category">
+                <input type="checkbox" id="5km" name="5RUN" value="5RUN" />
+                <label for="5km"> Corrida 5km</label>
+              </div>
+
+              <div class="category">
+                <input type="checkbox" id="4km" name="4WALK" value="4WALK" />
+                <label for="4km"> Caminhada 4km</label>
+              </div>
+            </fieldset>
+            <div class="input-box form-donation">
+              <input type="text" id="donation" name="donation" required class="input" />
+              <label for="donation">Valor de doação</label>
+            </div>
+
+            <div class="button-submit">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
         </div>
-        
+      </div>
     </div>
-</body>
+  </body>
 </html>

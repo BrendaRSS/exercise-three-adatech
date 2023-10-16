@@ -21,6 +21,13 @@ body{
 .container-brand{
     width: 50%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-brand img{
+    width: 500px;
 }
 
 .container-form{

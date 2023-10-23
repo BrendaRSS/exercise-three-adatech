@@ -18,7 +18,7 @@ npx json-server db.json
 ### Como executar o projeto em desenvolvimento:
 1. Clone esse repositório
 3. Instale as dependências
-2. Acesse a página em seu navegador (pode utilizar extensões como Liver Server).
+2. Acesse a página em seu navegador (pode utilizar extensões como Live Server).
 
 ### Imagem do projeto:
 
